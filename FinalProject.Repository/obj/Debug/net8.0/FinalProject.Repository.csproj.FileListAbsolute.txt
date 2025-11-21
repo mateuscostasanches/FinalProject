@@ -1,0 +1,17 @@
+C:\mateus\FinalProject\FinalProject.Repository\bin\Debug\net8.0\FinalProject.Repository.deps.json
+C:\mateus\FinalProject\FinalProject.Repository\bin\Debug\net8.0\FinalProject.Repository.runtimeconfig.json
+C:\mateus\FinalProject\FinalProject.Repository\bin\Debug\net8.0\FinalProject.Repository.dll
+C:\mateus\FinalProject\FinalProject.Repository\bin\Debug\net8.0\FinalProject.Repository.pdb
+C:\mateus\FinalProject\FinalProject.Repository\bin\Debug\net8.0\FinalProject.Domain.dll
+C:\mateus\FinalProject\FinalProject.Repository\bin\Debug\net8.0\FinalProject.Domain.pdb
+C:\mateus\FinalProject\FinalProject.Repository\obj\Debug\net8.0\FinalProject.Repository.csproj.AssemblyReference.cache
+C:\mateus\FinalProject\FinalProject.Repository\obj\Debug\net8.0\FinalProject.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\mateus\FinalProject\FinalProject.Repository\obj\Debug\net8.0\FinalProject.Repository.AssemblyInfoInputs.cache
+C:\mateus\FinalProject\FinalProject.Repository\obj\Debug\net8.0\FinalProject.Repository.AssemblyInfo.cs
+C:\mateus\FinalProject\FinalProject.Repository\obj\Debug\net8.0\FinalProject.Repository.csproj.CoreCompileInputs.cache
+C:\mateus\FinalProject\FinalProject.Repository\obj\Debug\net8.0\FinalPro.2BA212CF.Up2Date
+C:\mateus\FinalProject\FinalProject.Repository\obj\Debug\net8.0\FinalProject.Repository.dll
+C:\mateus\FinalProject\FinalProject.Repository\obj\Debug\net8.0\refint\FinalProject.Repository.dll
+C:\mateus\FinalProject\FinalProject.Repository\obj\Debug\net8.0\FinalProject.Repository.pdb
+C:\mateus\FinalProject\FinalProject.Repository\obj\Debug\net8.0\FinalProject.Repository.genruntimeconfig.cache
+C:\mateus\FinalProject\FinalProject.Repository\obj\Debug\net8.0\ref\FinalProject.Repository.dll
