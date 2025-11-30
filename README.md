@@ -1,2 +1,2 @@
 # FinalProject
-Final course project: Online Video Game Store ,built using Domain-Driven Design (DDD)*and an Event-Driven Architecture (EDA). Focuses on Domain Events for inter-context communication.
+This is the final project for the Event-Oriented Programming course, which is based on an online store app with a video game theme, implementing the DDD architecture and building upon the previous project, IFSPStore 2025 version.
