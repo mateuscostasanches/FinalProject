@@ -1,0 +1,12 @@
+C:\mateus\FinalProject\FinalProject.Domain\bin\Debug\net8.0\FinalProject.Domain.deps.json
+C:\mateus\FinalProject\FinalProject.Domain\bin\Debug\net8.0\FinalProject.Domain.dll
+C:\mateus\FinalProject\FinalProject.Domain\bin\Debug\net8.0\FinalProject.Domain.pdb
+C:\mateus\FinalProject\FinalProject.Domain\obj\Debug\net8.0\FinalProject.Domain.csproj.AssemblyReference.cache
+C:\mateus\FinalProject\FinalProject.Domain\obj\Debug\net8.0\FinalProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\mateus\FinalProject\FinalProject.Domain\obj\Debug\net8.0\FinalProject.Domain.AssemblyInfoInputs.cache
+C:\mateus\FinalProject\FinalProject.Domain\obj\Debug\net8.0\FinalProject.Domain.AssemblyInfo.cs
+C:\mateus\FinalProject\FinalProject.Domain\obj\Debug\net8.0\FinalProject.Domain.csproj.CoreCompileInputs.cache
+C:\mateus\FinalProject\FinalProject.Domain\obj\Debug\net8.0\FinalProject.Domain.dll
+C:\mateus\FinalProject\FinalProject.Domain\obj\Debug\net8.0\refint\FinalProject.Domain.dll
+C:\mateus\FinalProject\FinalProject.Domain\obj\Debug\net8.0\FinalProject.Domain.pdb
+C:\mateus\FinalProject\FinalProject.Domain\obj\Debug\net8.0\ref\FinalProject.Domain.dll
