@@ -8,8 +8,10 @@ using System.Globalization;
 
 namespace FinalProject.App.Register
 {
+
     public partial class ProductForm : BaseForm
     {
+
         #region Variables
         private IBaseService<Product> _productService;
         private IBaseService<Category> _categoryService;
@@ -133,7 +135,7 @@ namespace FinalProject.App.Register
             txtId.Text = record.Cells["Id"].Value.ToString();
             txtName.Text = record.Cells["Name"].Value.ToString();
             txtDescription.Text = record.Cells["Description"].Value.ToString();
-            txtReleaseDate.Text = record.Cells["ReleaseDate"].Value.ToString();
+            record.Cells["ReleaseDate"].Value.ToString();
             txtPrice.Text = record.Cells["Price"].Value.ToString();
             txtCategory.SelectedValue = record.Cells["CategoryId"].Value;
             txtDeveloper.SelectedValue = record.Cells["DeveloperId"].Value;
@@ -144,8 +146,10 @@ namespace FinalProject.App.Register
         private void ProductForm_Load(object sender, EventArgs e)
         {
             LoadCombo();
+            txtName.Focus();
         }
         #endregion 
+
     }
 
 }

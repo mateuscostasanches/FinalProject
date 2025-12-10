@@ -9,6 +9,7 @@ namespace FinalProject.App.Register
 {
     public partial class AddressForm : BaseForm
     {
+
         #region Variables
         private IBaseService<Address> _addressService;
         private List<AddressViewModel>? addresses;
@@ -19,7 +20,7 @@ namespace FinalProject.App.Register
         {
             _addressService = addressService;
             InitializeComponent();
-           
+
         }
         #endregion
 
@@ -83,7 +84,15 @@ namespace FinalProject.App.Register
             txtState.Text = record?.Cells["State"].Value.ToString();
             txtCity.Text = record?.Cells["City"].Value.ToString();
         }
+        #endregion
+
+        #region Events
+        private void AddressForm_Load(object sender, EventArgs e)
+        {
+            txtCity.Focus();
+        }
         #endregion 
+
     }
 
 }

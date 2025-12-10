@@ -89,6 +89,14 @@ namespace FinalProject.App.Register
             txtName.Text = record?.Cells["Name"].Value.ToString();
         }
         #endregion
+
+        #region Events
+        private void CategoryForm_Load(object sender, EventArgs e)
+        {
+            txtName.Focus();
+        }
+        #endregion
+
     }
 
 }

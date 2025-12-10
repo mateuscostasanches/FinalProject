@@ -143,6 +143,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(45, 45, 48);
             BorderColor = Color.Transparent;
             ClientSize = new Size(600, 480);
             Controls.Add(btnLogin);

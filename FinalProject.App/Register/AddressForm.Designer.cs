@@ -196,6 +196,7 @@
             Text = "Addresses";
             TitleColor = Color.Gray;
             TopMost = true;
+            Load += AddressForm_Load;
             TabControl.ResumeLayout(false);
             RegisterTabPage.ResumeLayout(false);
             ListTabPage.ResumeLayout(false);

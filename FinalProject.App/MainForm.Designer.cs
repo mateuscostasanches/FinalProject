@@ -156,8 +156,10 @@
             HeaderColor = Color.FromArgb(60, 63, 65);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Image = Properties.Resources.app_icon;
+            ImeMode = ImeMode.NoControl;
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
+            MinimizeBox = false;
             Name = "MainForm";
             Padding = new Padding(2, 30, 2, 2);
             Sizable = false;

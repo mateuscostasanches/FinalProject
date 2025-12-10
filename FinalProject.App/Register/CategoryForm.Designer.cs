@@ -150,6 +150,7 @@
             Text = "Categories";
             TitleColor = Color.Gray;
             TopMost = true;
+            Load += CategoryForm_Load;
             TabControl.ResumeLayout(false);
             RegisterTabPage.ResumeLayout(false);
             ListTabPage.ResumeLayout(false);

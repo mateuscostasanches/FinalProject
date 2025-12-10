@@ -1,13 +1,14 @@
 ﻿
+using System.Globalization;
 using FinalProject.App.Base;
-using FinalProject.App.ViewModel;
 using FinalProject.Domain.Base;
+using FinalProject.App.ViewModel;
 using FinalProject.Domain.Entities;
 using FinalProject.Service.Validators;
-using System.Globalization;
 
 namespace FinalProject.App.Register
 {
+
     public partial class SaleForm : BaseForm
     {
 
@@ -81,7 +82,7 @@ namespace FinalProject.App.Register
             base.New();
             _saleItems.Clear();
             PopulateGridItemsSale();
-            txtSaleDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
 
         }
 
@@ -150,7 +151,7 @@ namespace FinalProject.App.Register
             int.TryParse(record?.Cells["Id"].Value.ToString(), out var id);
             txtId.Text = record?.Cells["Id"].Value.ToString();
             txtCustomer.SelectedValue = record?.Cells["CustomerId"].Value;
-            txtSaleDate.Text = record?.Cells["SaleDate"].Value.ToString();
+            record?.Cells["SaleDate"].Value.ToString();
 
             var includes = new List<string>() { "Customer", "SaleItems", "SaleItems.Product", "SaleItems.Developer" };
             var sale = _saleService.GetById<Sale>(id, includes);
@@ -294,8 +295,10 @@ namespace FinalProject.App.Register
         private void SaleForm_Load(object sender, EventArgs e)
         {
             LoadCombo();
+
         }
         #endregion
 
     }
+
 }

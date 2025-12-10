@@ -34,7 +34,6 @@
             txtPrice = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             txtCategory = new ReaLTaiizor.Controls.MaterialComboBox();
             txtDeveloper = new ReaLTaiizor.Controls.MaterialComboBox();
-            txtReleaseDate = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             TabControl.SuspendLayout();
             RegisterTabPage.SuspendLayout();
             ListTabPage.SuspendLayout();
@@ -49,7 +48,6 @@
             // 
             // RegisterTabPage
             // 
-            RegisterTabPage.Controls.Add(txtReleaseDate);
             RegisterTabPage.Controls.Add(txtDeveloper);
             RegisterTabPage.Controls.Add(txtCategory);
             RegisterTabPage.Controls.Add(txtPrice);
@@ -64,7 +62,6 @@
             RegisterTabPage.Controls.SetChildIndex(txtPrice, 0);
             RegisterTabPage.Controls.SetChildIndex(txtCategory, 0);
             RegisterTabPage.Controls.SetChildIndex(txtDeveloper, 0);
-            RegisterTabPage.Controls.SetChildIndex(txtReleaseDate, 0);
             // 
             // lostPanel1
             // 
@@ -102,7 +99,7 @@
             txtName.SelectionLength = 0;
             txtName.SelectionStart = 0;
             txtName.ShortcutsEnabled = true;
-            txtName.Size = new Size(448, 48);
+            txtName.Size = new Size(523, 48);
             txtName.SkipLiterals = true;
             txtName.TabIndex = 23;
             txtName.TabStop = false;
@@ -144,7 +141,7 @@
             txtDescription.SelectionLength = 0;
             txtDescription.SelectionStart = 0;
             txtDescription.ShortcutsEnabled = true;
-            txtDescription.Size = new Size(448, 48);
+            txtDescription.Size = new Size(738, 48);
             txtDescription.SkipLiterals = true;
             txtDescription.TabIndex = 24;
             txtDescription.TabStop = false;
@@ -169,7 +166,7 @@
             txtId.HideSelection = true;
             txtId.InsertKeyMode = InsertKeyMode.Default;
             txtId.LeadingIcon = Properties.Resources.id_icon;
-            txtId.Location = new Point(255, 197);
+            txtId.Location = new Point(555, 62);
             txtId.Mask = "";
             txtId.MaxLength = 32767;
             txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -186,7 +183,7 @@
             txtId.SelectionLength = 0;
             txtId.SelectionStart = 0;
             txtId.ShortcutsEnabled = true;
-            txtId.Size = new Size(219, 48);
+            txtId.Size = new Size(209, 48);
             txtId.SkipLiterals = true;
             txtId.TabIndex = 25;
             txtId.TabStop = false;
@@ -229,7 +226,7 @@
             txtPrice.SelectionLength = 0;
             txtPrice.SelectionStart = 0;
             txtPrice.ShortcutsEnabled = true;
-            txtPrice.Size = new Size(223, 48);
+            txtPrice.Size = new Size(131, 48);
             txtPrice.SkipLiterals = true;
             txtPrice.TabIndex = 26;
             txtPrice.TabStop = false;
@@ -255,11 +252,11 @@
             txtCategory.Hint = "Category";
             txtCategory.IntegralHeight = false;
             txtCategory.ItemHeight = 43;
-            txtCategory.Location = new Point(480, 127);
+            txtCategory.Location = new Point(465, 197);
             txtCategory.MaxDropDownItems = 4;
             txtCategory.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtCategory.Name = "txtCategory";
-            txtCategory.Size = new Size(284, 49);
+            txtCategory.Size = new Size(299, 49);
             txtCategory.StartIndex = 0;
             txtCategory.TabIndex = 27;
             // 
@@ -278,57 +275,13 @@
             txtDeveloper.Hint = "Developer";
             txtDeveloper.IntegralHeight = false;
             txtDeveloper.ItemHeight = 43;
-            txtDeveloper.Location = new Point(480, 61);
+            txtDeveloper.Location = new Point(163, 197);
             txtDeveloper.MaxDropDownItems = 4;
             txtDeveloper.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtDeveloper.Name = "txtDeveloper";
-            txtDeveloper.Size = new Size(284, 49);
+            txtDeveloper.Size = new Size(296, 49);
             txtDeveloper.StartIndex = 0;
             txtDeveloper.TabIndex = 28;
-            // 
-            // txtReleaseDate
-            // 
-            txtReleaseDate.AllowPromptAsInput = true;
-            txtReleaseDate.AnimateReadOnly = false;
-            txtReleaseDate.AsciiOnly = false;
-            txtReleaseDate.BackgroundImageLayout = ImageLayout.None;
-            txtReleaseDate.BeepOnError = false;
-            txtReleaseDate.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
-            txtReleaseDate.Depth = 0;
-            txtReleaseDate.Enabled = false;
-            txtReleaseDate.Font = new Font("Symbol", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 2);
-            txtReleaseDate.HidePromptOnLeave = false;
-            txtReleaseDate.HideSelection = true;
-            txtReleaseDate.Hint = "Release Date";
-            txtReleaseDate.InsertKeyMode = InsertKeyMode.Default;
-            txtReleaseDate.LeadingIcon = null;
-            txtReleaseDate.Location = new Point(480, 197);
-            txtReleaseDate.Mask = "__/__/____";
-            txtReleaseDate.MaxLength = 32767;
-            txtReleaseDate.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtReleaseDate.Name = "txtReleaseDate";
-            txtReleaseDate.PasswordChar = '\0';
-            txtReleaseDate.PrefixSuffixText = null;
-            txtReleaseDate.PromptChar = '_';
-            txtReleaseDate.ReadOnly = false;
-            txtReleaseDate.RejectInputOnFirstFailure = false;
-            txtReleaseDate.ResetOnPrompt = true;
-            txtReleaseDate.ResetOnSpace = true;
-            txtReleaseDate.RightToLeft = RightToLeft.No;
-            txtReleaseDate.SelectedText = "";
-            txtReleaseDate.SelectionLength = 0;
-            txtReleaseDate.SelectionStart = 0;
-            txtReleaseDate.ShortcutsEnabled = true;
-            txtReleaseDate.Size = new Size(284, 48);
-            txtReleaseDate.SkipLiterals = true;
-            txtReleaseDate.TabIndex = 29;
-            txtReleaseDate.TabStop = false;
-            txtReleaseDate.Text = "__/__/____";
-            txtReleaseDate.TextAlign = HorizontalAlignment.Left;
-            txtReleaseDate.TextMaskFormat = MaskFormat.IncludePromptAndLiterals;
-            txtReleaseDate.TrailingIcon = null;
-            txtReleaseDate.UseSystemPasswordChar = false;
-            txtReleaseDate.ValidatingType = null;
             // 
             // ProductForm
             // 
@@ -359,6 +312,5 @@
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtDescription;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtName;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtPublicationDate;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtReleaseDate;
     }
 }

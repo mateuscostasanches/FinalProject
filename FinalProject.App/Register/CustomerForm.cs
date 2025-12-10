@@ -33,7 +33,6 @@ namespace FinalProject.App.Register
             customer.Name = txtName.Text;
             customer.Email = txtEmail.Text;
             customer.Password = txtPassword.Text;
-            customer.RegisterDate = DateTime.Now.Date;
             if (int.TryParse(txtCityState.SelectedValue!.ToString(), out var idAddress))
             {
                 var address = _addressService.GetById<Address>(idAddress);
@@ -94,6 +93,7 @@ namespace FinalProject.App.Register
             dataGridViewBaseForm.Columns["Name"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewBaseForm.Columns["Email"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewBaseForm.Columns["Password"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewBaseForm.Columns["Password"].Visible = false;
             dataGridViewBaseForm.Columns["IdAddress"].Visible = false;
             dataGridViewBaseForm.Columns["CityState"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewBaseForm.Columns["CityState"].HeaderText = "City State";
@@ -109,7 +109,7 @@ namespace FinalProject.App.Register
             txtName.Text = record.Cells["Name"].Value.ToString();
             txtEmail.Text = record.Cells["Email"].Value.ToString();
             txtPassword.Text = record.Cells["Password"].Value.ToString();
-            txtRegisterDate.Text = record.Cells["RegisterDate"].Value.ToString();
+            record.Cells["RegisterDate"].Value.ToString();
         }
         #endregion 
 
@@ -117,6 +117,7 @@ namespace FinalProject.App.Register
         private void CustomerForm_Load(object sender, EventArgs e)
         {
             LoadCombo();
+            txtName.Focus();
         }
         #endregion 
 

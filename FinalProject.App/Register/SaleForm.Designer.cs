@@ -39,7 +39,6 @@
             btnRemoveGame = new ReaLTaiizor.Controls.LostButton();
             txtUnitPrice = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             txtProduct = new ReaLTaiizor.Controls.MaterialComboBox();
-            txtSaleDate = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             label1 = new Label();
             TabControl.SuspendLayout();
             RegisterTabPage.SuspendLayout();
@@ -57,17 +56,17 @@
             // 
             // RegisterTabPage
             // 
-            RegisterTabPage.Controls.Add(txtSaleDate);
             RegisterTabPage.Controls.Add(txtId);
             RegisterTabPage.Controls.Add(groupBox1);
             RegisterTabPage.Controls.Add(txtCustomer);
             RegisterTabPage.Controls.Add(txtDeveloper);
+            RegisterTabPage.Controls.Add(txtProduct);
             RegisterTabPage.Size = new Size(788, 522);
+            RegisterTabPage.Controls.SetChildIndex(txtProduct, 0);
             RegisterTabPage.Controls.SetChildIndex(txtDeveloper, 0);
             RegisterTabPage.Controls.SetChildIndex(txtCustomer, 0);
             RegisterTabPage.Controls.SetChildIndex(groupBox1, 0);
             RegisterTabPage.Controls.SetChildIndex(txtId, 0);
-            RegisterTabPage.Controls.SetChildIndex(txtSaleDate, 0);
             RegisterTabPage.Controls.SetChildIndex(lostPanel1, 0);
             // 
             // lostPanel1
@@ -93,7 +92,7 @@
             txtId.HideSelection = true;
             txtId.InsertKeyMode = InsertKeyMode.Default;
             txtId.LeadingIcon = Properties.Resources.id_icon;
-            txtId.Location = new Point(396, 34);
+            txtId.Location = new Point(29, 88);
             txtId.Mask = "";
             txtId.MaxLength = 32767;
             txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -110,7 +109,7 @@
             txtId.SelectionLength = 0;
             txtId.SelectionStart = 0;
             txtId.ShortcutsEnabled = true;
-            txtId.Size = new Size(359, 48);
+            txtId.Size = new Size(180, 48);
             txtId.SkipLiterals = true;
             txtId.TabIndex = 21;
             txtId.TabStop = false;
@@ -135,7 +134,7 @@
             txtDeveloper.Hint = "Developer";
             txtDeveloper.IntegralHeight = false;
             txtDeveloper.ItemHeight = 43;
-            txtDeveloper.Location = new Point(29, 88);
+            txtDeveloper.Location = new Point(394, 33);
             txtDeveloper.MaxDropDownItems = 4;
             txtDeveloper.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtDeveloper.Name = "txtDeveloper";
@@ -174,7 +173,6 @@
             groupBox1.Controls.Add(txtTotalPrice);
             groupBox1.Controls.Add(btnRemoveGame);
             groupBox1.Controls.Add(txtUnitPrice);
-            groupBox1.Controls.Add(txtProduct);
             groupBox1.ForeColor = Color.Gray;
             groupBox1.Location = new Point(29, 142);
             groupBox1.Name = "groupBox1";
@@ -190,9 +188,9 @@
             lostButton1.ForeColor = Color.White;
             lostButton1.HoverColor = Color.FromArgb(45, 45, 48);
             lostButton1.Image = null;
-            lostButton1.Location = new Point(626, 26);
+            lostButton1.Location = new Point(583, 28);
             lostButton1.Name = "lostButton1";
-            lostButton1.Size = new Size(83, 49);
+            lostButton1.Size = new Size(126, 49);
             lostButton1.TabIndex = 37;
             lostButton1.Text = "+Add Game";
             lostButton1.Click += btnNewGame_Click;
@@ -212,7 +210,7 @@
             txtQuantity.HideSelection = true;
             txtQuantity.InsertKeyMode = InsertKeyMode.Default;
             txtQuantity.LeadingIcon = Properties.Resources.store;
-            txtQuantity.Location = new Point(468, 26);
+            txtQuantity.Location = new Point(367, 28);
             txtQuantity.Mask = "";
             txtQuantity.MaxLength = 32767;
             txtQuantity.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -229,7 +227,7 @@
             txtQuantity.SelectionLength = 0;
             txtQuantity.SelectionStart = 0;
             txtQuantity.ShortcutsEnabled = true;
-            txtQuantity.Size = new Size(65, 48);
+            txtQuantity.Size = new Size(90, 48);
             txtQuantity.SkipLiterals = true;
             txtQuantity.TabIndex = 36;
             txtQuantity.TabStop = false;
@@ -272,7 +270,7 @@
             txtTotalPrice.Hint = "Total Price";
             txtTotalPrice.InsertKeyMode = InsertKeyMode.Default;
             txtTotalPrice.LeadingIcon = null;
-            txtTotalPrice.Location = new Point(356, 26);
+            txtTotalPrice.Location = new Point(186, 28);
             txtTotalPrice.Mask = "";
             txtTotalPrice.MaxLength = 32767;
             txtTotalPrice.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -290,7 +288,7 @@
             txtTotalPrice.SelectionLength = 0;
             txtTotalPrice.SelectionStart = 0;
             txtTotalPrice.ShortcutsEnabled = true;
-            txtTotalPrice.Size = new Size(106, 48);
+            txtTotalPrice.Size = new Size(175, 48);
             txtTotalPrice.SkipLiterals = true;
             txtTotalPrice.TabIndex = 33;
             txtTotalPrice.TabStop = false;
@@ -307,9 +305,9 @@
             btnRemoveGame.ForeColor = Color.White;
             btnRemoveGame.HoverColor = Color.DarkRed;
             btnRemoveGame.Image = null;
-            btnRemoveGame.Location = new Point(539, 26);
+            btnRemoveGame.Location = new Point(463, 28);
             btnRemoveGame.Name = "btnRemoveGame";
-            btnRemoveGame.Size = new Size(81, 49);
+            btnRemoveGame.Size = new Size(114, 49);
             btnRemoveGame.TabIndex = 34;
             btnRemoveGame.Text = "Delete Game";
             btnRemoveGame.Click += btnRemoveGame_Click;
@@ -330,7 +328,7 @@
             txtUnitPrice.Hint = "Unit Price";
             txtUnitPrice.InsertKeyMode = InsertKeyMode.Default;
             txtUnitPrice.LeadingIcon = null;
-            txtUnitPrice.Location = new Point(247, 25);
+            txtUnitPrice.Location = new Point(16, 28);
             txtUnitPrice.Mask = "";
             txtUnitPrice.MaxLength = 32767;
             txtUnitPrice.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -348,7 +346,7 @@
             txtUnitPrice.SelectionLength = 0;
             txtUnitPrice.SelectionStart = 0;
             txtUnitPrice.ShortcutsEnabled = true;
-            txtUnitPrice.Size = new Size(103, 48);
+            txtUnitPrice.Size = new Size(164, 48);
             txtUnitPrice.SkipLiterals = true;
             txtUnitPrice.TabIndex = 32;
             txtUnitPrice.TabStop = false;
@@ -373,58 +371,14 @@
             txtProduct.Hint = "Game";
             txtProduct.IntegralHeight = false;
             txtProduct.ItemHeight = 43;
-            txtProduct.Location = new Point(16, 25);
+            txtProduct.Location = new Point(215, 88);
             txtProduct.MaxDropDownItems = 4;
             txtProduct.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtProduct.Name = "txtProduct";
-            txtProduct.Size = new Size(225, 49);
+            txtProduct.Size = new Size(540, 49);
             txtProduct.StartIndex = 0;
             txtProduct.TabIndex = 31;
             txtProduct.SelectedIndexChanged += txtProduct_SelectedIndexChanged;
-            // 
-            // txtSaleDate
-            // 
-            txtSaleDate.AllowPromptAsInput = true;
-            txtSaleDate.AnimateReadOnly = false;
-            txtSaleDate.AsciiOnly = false;
-            txtSaleDate.BackgroundImageLayout = ImageLayout.None;
-            txtSaleDate.BeepOnError = false;
-            txtSaleDate.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
-            txtSaleDate.Depth = 0;
-            txtSaleDate.Enabled = false;
-            txtSaleDate.Font = new Font("Symbol", 15.75F);
-            txtSaleDate.HidePromptOnLeave = false;
-            txtSaleDate.HideSelection = true;
-            txtSaleDate.Hint = "Sale Date";
-            txtSaleDate.InsertKeyMode = InsertKeyMode.Default;
-            txtSaleDate.LeadingIcon = null;
-            txtSaleDate.Location = new Point(396, 88);
-            txtSaleDate.Mask = "__/__/____";
-            txtSaleDate.MaxLength = 32767;
-            txtSaleDate.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtSaleDate.Name = "txtSaleDate";
-            txtSaleDate.PasswordChar = '\0';
-            txtSaleDate.PrefixSuffixText = null;
-            txtSaleDate.PromptChar = '_';
-            txtSaleDate.ReadOnly = false;
-            txtSaleDate.RejectInputOnFirstFailure = false;
-            txtSaleDate.ResetOnPrompt = true;
-            txtSaleDate.ResetOnSpace = true;
-            txtSaleDate.RightToLeft = RightToLeft.No;
-            txtSaleDate.SelectedText = "";
-            txtSaleDate.SelectionLength = 0;
-            txtSaleDate.SelectionStart = 0;
-            txtSaleDate.ShortcutsEnabled = true;
-            txtSaleDate.Size = new Size(359, 48);
-            txtSaleDate.SkipLiterals = true;
-            txtSaleDate.TabIndex = 31;
-            txtSaleDate.TabStop = false;
-            txtSaleDate.Text = "__/__/____";
-            txtSaleDate.TextAlign = HorizontalAlignment.Left;
-            txtSaleDate.TextMaskFormat = MaskFormat.IncludeLiterals;
-            txtSaleDate.TrailingIcon = null;
-            txtSaleDate.UseSystemPasswordChar = false;
-            txtSaleDate.ValidatingType = null;
             // 
             // label1
             // 
@@ -464,7 +418,6 @@
         private ReaLTaiizor.Controls.MaterialComboBox txtCustomer;
         private ReaLTaiizor.Controls.MaterialComboBox txtDeveloper;
         private ReaLTaiizor.Controls.MaterialComboBox txtProduct;
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtSaleDate;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtTotalPrice;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtUnitPrice;
         private ReaLTaiizor.Controls.LostButton btnRemoveGame;

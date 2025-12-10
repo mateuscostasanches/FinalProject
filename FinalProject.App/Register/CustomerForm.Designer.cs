@@ -30,7 +30,6 @@ namespace FinalProject.App.Register
         /// </summary>
         private void InitializeComponent()
         {
-            txtRegisterDate = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             txtCityState = new ReaLTaiizor.Controls.MaterialComboBox();
             txtPassword = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             txtEmail = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
@@ -50,7 +49,6 @@ namespace FinalProject.App.Register
             // 
             // RegisterTabPage
             // 
-            RegisterTabPage.Controls.Add(txtRegisterDate);
             RegisterTabPage.Controls.Add(txtCityState);
             RegisterTabPage.Controls.Add(txtPassword);
             RegisterTabPage.Controls.Add(txtEmail);
@@ -63,55 +61,10 @@ namespace FinalProject.App.Register
             RegisterTabPage.Controls.SetChildIndex(txtEmail, 0);
             RegisterTabPage.Controls.SetChildIndex(txtPassword, 0);
             RegisterTabPage.Controls.SetChildIndex(txtCityState, 0);
-            RegisterTabPage.Controls.SetChildIndex(txtRegisterDate, 0);
             // 
             // lostPanel1
             // 
             lostPanel1.Location = new Point(3, 314);
-            // 
-            // txtRegisterDate
-            // 
-            txtRegisterDate.AllowPromptAsInput = true;
-            txtRegisterDate.AnimateReadOnly = false;
-            txtRegisterDate.AsciiOnly = false;
-            txtRegisterDate.BackgroundImageLayout = ImageLayout.None;
-            txtRegisterDate.BeepOnError = false;
-            txtRegisterDate.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
-            txtRegisterDate.Depth = 0;
-            txtRegisterDate.Enabled = false;
-            txtRegisterDate.Font = new Font("Symbol", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 2);
-            txtRegisterDate.HidePromptOnLeave = false;
-            txtRegisterDate.HideSelection = true;
-            txtRegisterDate.Hint = "Register Date";
-            txtRegisterDate.InsertKeyMode = InsertKeyMode.Default;
-            txtRegisterDate.LeadingIcon = null;
-            txtRegisterDate.Location = new Point(366, 120);
-            txtRegisterDate.Mask = "dd/MM/yyyy";
-            txtRegisterDate.MaxLength = 32767;
-            txtRegisterDate.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtRegisterDate.Name = "txtRegisterDate";
-            txtRegisterDate.PasswordChar = '\0';
-            txtRegisterDate.PrefixSuffixText = null;
-            txtRegisterDate.PromptChar = '_';
-            txtRegisterDate.ReadOnly = false;
-            txtRegisterDate.RejectInputOnFirstFailure = false;
-            txtRegisterDate.ResetOnPrompt = true;
-            txtRegisterDate.ResetOnSpace = true;
-            txtRegisterDate.RightToLeft = RightToLeft.No;
-            txtRegisterDate.SelectedText = "";
-            txtRegisterDate.SelectionLength = 0;
-            txtRegisterDate.SelectionStart = 0;
-            txtRegisterDate.ShortcutsEnabled = true;
-            txtRegisterDate.Size = new Size(358, 48);
-            txtRegisterDate.SkipLiterals = true;
-            txtRegisterDate.TabIndex = 26;
-            txtRegisterDate.TabStop = false;
-            txtRegisterDate.Text = "dd/MM/yyyy";
-            txtRegisterDate.TextAlign = HorizontalAlignment.Left;
-            txtRegisterDate.TextMaskFormat = MaskFormat.IncludeLiterals;
-            txtRegisterDate.TrailingIcon = null;
-            txtRegisterDate.UseSystemPasswordChar = false;
-            txtRegisterDate.ValidatingType = null;
             // 
             // txtCityState
             // 
@@ -128,11 +81,11 @@ namespace FinalProject.App.Register
             txtCityState.Hint = "City - State";
             txtCityState.IntegralHeight = false;
             txtCityState.ItemHeight = 43;
-            txtCityState.Location = new Point(61, 119);
+            txtCityState.Location = new Point(477, 158);
             txtCityState.MaxDropDownItems = 4;
             txtCityState.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtCityState.Name = "txtCityState";
-            txtCityState.Size = new Size(299, 49);
+            txtCityState.Size = new Size(247, 49);
             txtCityState.StartIndex = 0;
             txtCityState.TabIndex = 25;
             // 
@@ -151,7 +104,7 @@ namespace FinalProject.App.Register
             txtPassword.Hint = "Password";
             txtPassword.InsertKeyMode = InsertKeyMode.Default;
             txtPassword.LeadingIcon = Properties.Resources.password_icon;
-            txtPassword.Location = new Point(61, 228);
+            txtPassword.Location = new Point(61, 213);
             txtPassword.Mask = "";
             txtPassword.MaxLength = 32767;
             txtPassword.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -193,7 +146,7 @@ namespace FinalProject.App.Register
             txtEmail.Hint = "Email";
             txtEmail.InsertKeyMode = InsertKeyMode.Default;
             txtEmail.LeadingIcon = Properties.Resources.email_icon;
-            txtEmail.Location = new Point(61, 174);
+            txtEmail.Location = new Point(61, 158);
             txtEmail.Mask = "";
             txtEmail.MaxLength = 32767;
             txtEmail.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -210,7 +163,7 @@ namespace FinalProject.App.Register
             txtEmail.SelectionLength = 0;
             txtEmail.SelectionStart = 0;
             txtEmail.ShortcutsEnabled = true;
-            txtEmail.Size = new Size(663, 48);
+            txtEmail.Size = new Size(410, 48);
             txtEmail.SkipLiterals = true;
             txtEmail.TabIndex = 23;
             txtEmail.TabStop = false;
@@ -235,7 +188,7 @@ namespace FinalProject.App.Register
             txtId.HideSelection = true;
             txtId.InsertKeyMode = InsertKeyMode.Default;
             txtId.LeadingIcon = Properties.Resources.id_icon;
-            txtId.Location = new Point(531, 65);
+            txtId.Location = new Point(531, 103);
             txtId.Mask = "";
             txtId.MaxLength = 32767;
             txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -277,7 +230,7 @@ namespace FinalProject.App.Register
             txtName.Hint = "Name";
             txtName.InsertKeyMode = InsertKeyMode.Default;
             txtName.LeadingIcon = null;
-            txtName.Location = new Point(61, 65);
+            txtName.Location = new Point(61, 103);
             txtName.Mask = "";
             txtName.MaxLength = 32767;
             txtName.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
@@ -325,8 +278,6 @@ namespace FinalProject.App.Register
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtRegisterDate;
         private ReaLTaiizor.Controls.MaterialComboBox txtCityState;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtPassword;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox txtEmail;
