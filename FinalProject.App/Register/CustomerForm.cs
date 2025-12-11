@@ -116,10 +116,26 @@ namespace FinalProject.App.Register
         #region Events
         private void CustomerForm_Load(object sender, EventArgs e)
         {
-            LoadCombo();
+            TabControl.SelectedIndex = 0;
             txtName.Focus();
+            LoadCombo();
         }
-        #endregion 
+
+        private void txtPassword_TrailingIconClick(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '•')
+            {
+                txtPassword.PasswordChar = '\0';
+                txtPassword.TrailingIcon = Properties.Resources.hidden;
+            }
+            else
+            {
+                txtPassword.PasswordChar = '•';
+                txtPassword.TrailingIcon = Properties.Resources.eye;
+            }
+            txtPassword.Focus();
+        }
+        #endregion
 
     }
 }

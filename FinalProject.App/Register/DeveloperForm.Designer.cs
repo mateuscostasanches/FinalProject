@@ -210,7 +210,7 @@
             txtPassword.MaxLength = 32767;
             txtPassword.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtPassword.Name = "txtPassword";
-            txtPassword.PasswordChar = '*';
+            txtPassword.PasswordChar = '•';
             txtPassword.PrefixSuffixText = null;
             txtPassword.PromptChar = '_';
             txtPassword.ReadOnly = false;
@@ -228,9 +228,10 @@
             txtPassword.TabStop = false;
             txtPassword.TextAlign = HorizontalAlignment.Left;
             txtPassword.TextMaskFormat = MaskFormat.IncludePrompt;
-            txtPassword.TrailingIcon = null;
+            txtPassword.TrailingIcon = Properties.Resources.eye;
             txtPassword.UseSystemPasswordChar = false;
             txtPassword.ValidatingType = null;
+            txtPassword.TrailingIconClick += txtPassword_TrailingIconClick;
             // 
             // txtCityState
             // 

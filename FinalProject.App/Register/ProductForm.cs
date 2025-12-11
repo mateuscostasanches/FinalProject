@@ -145,8 +145,9 @@ namespace FinalProject.App.Register
         #region Events
         private void ProductForm_Load(object sender, EventArgs e)
         {
-            LoadCombo();
+            TabControl.SelectedIndex = 0;
             txtName.Focus();
+            LoadCombo();
         }
         #endregion 
 

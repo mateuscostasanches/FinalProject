@@ -93,7 +93,9 @@ namespace FinalProject.App.Register
         #region Events
         private void CategoryForm_Load(object sender, EventArgs e)
         {
+            TabControl.SelectedIndex = 0;
             txtName.Focus();
+
         }
         #endregion
 

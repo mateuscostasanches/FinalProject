@@ -55,6 +55,14 @@
             RegisterTabPage.Controls.SetChildIndex(txtState, 0);
             RegisterTabPage.Controls.SetChildIndex(lostPanel1, 0);
             // 
+            // ListTabPage
+            // 
+            ListTabPage.Size = new Size(788, 372);
+            // 
+            // lostPanel
+            // 
+            lostPanel.Location = new Point(3, 314);
+            // 
             // lostPanel1
             // 
             lostPanel1.Location = new Point(3, 314);

@@ -89,6 +89,7 @@ namespace FinalProject.App.Register
         #region Events
         private void AddressForm_Load(object sender, EventArgs e)
         {
+            TabControl.SelectedIndex = 0;
             txtCity.Focus();
         }
         #endregion 

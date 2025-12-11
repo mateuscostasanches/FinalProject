@@ -63,6 +63,7 @@ namespace FinalProject.App.Register
             }
 
             sale.TotalSale = _saleItems.Sum(x => x.TotalPrice);
+            sale.SaleItems.Clear();
 
             foreach (var item in _saleItems)
             {
@@ -172,10 +173,13 @@ namespace FinalProject.App.Register
                     UnitPrice = item.UnitPrice,
                     DeveloperId = item.Developer!.Id,
                     Developer = item.Developer!.Name,
+                    TotalPrice = item.UnitPrice,
+                        
                 };
                 _saleItems.Add(saleItem);
             }
             PopulateGridItemsSale();
+            CalculateTotalSale();
         }
 
         private void PopulateGridItemsSale()
@@ -294,6 +298,7 @@ namespace FinalProject.App.Register
 
         private void SaleForm_Load(object sender, EventArgs e)
         {
+            TabControl.SelectedIndex = 0;
             LoadCombo();
 
         }
