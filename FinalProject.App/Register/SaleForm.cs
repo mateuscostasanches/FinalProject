@@ -54,7 +54,7 @@ namespace FinalProject.App.Register
 
         private void FormToObject(Sale sale)
         {
-            sale.SaleDate = DateTime.Now.Date;
+            sale.SaleDate = DateTime.Now;
 
             if (int.TryParse(txtCustomer.SelectedValue!.ToString(), out var idCustomer))
             {
@@ -145,6 +145,8 @@ namespace FinalProject.App.Register
             dataGridViewBaseForm.Columns["TotalSale"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewBaseForm.Columns["SaleDate"].HeaderText = "Sale Date";
             dataGridViewBaseForm.Columns["TotalSale"].HeaderText = "Total Sale";
+            dataGridViewBaseForm.Columns["SaleDate"].DefaultCellStyle.Format = "MM/dd/yyyy h:mm:ss tt";
+            dataGridViewBaseForm.Columns["SaleDate"].DefaultCellStyle.FormatProvider = CultureInfo.InvariantCulture;
         }
 
         protected override void GridToForm(DataGridViewRow? record)
@@ -291,7 +293,6 @@ namespace FinalProject.App.Register
                     {
                         txtQuantity.Text = "1";
                     }
-
                 }
             }
         }
@@ -300,7 +301,9 @@ namespace FinalProject.App.Register
         {
             TabControl.SelectedIndex = 0;
             LoadCombo();
-
+            txtCustomer.SelectedIndex = -1;
+            txtProduct.SelectedIndex = -1;
+            txtDeveloper.SelectedIndex = -1;
         }
         #endregion
 

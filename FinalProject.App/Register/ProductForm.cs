@@ -146,8 +146,9 @@ namespace FinalProject.App.Register
         private void ProductForm_Load(object sender, EventArgs e)
         {
             TabControl.SelectedIndex = 0;
-            txtName.Focus();
             LoadCombo();
+            txtDeveloper.SelectedIndex = -1;
+            txtCategory.SelectedIndex = -1;
         }
         #endregion 
 

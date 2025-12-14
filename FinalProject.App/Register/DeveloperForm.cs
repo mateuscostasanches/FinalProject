@@ -1,9 +1,10 @@
 ﻿
 using FinalProject.App.Base;
-using FinalProject.Domain.Base;
 using FinalProject.App.ViewModel;
+using FinalProject.Domain.Base;
 using FinalProject.Domain.Entities;
 using FinalProject.Service.Validators;
+using System.Globalization;
 
 namespace FinalProject.App.Register
 {
@@ -33,7 +34,7 @@ namespace FinalProject.App.Register
             developer.Name = txtName.Text;
             developer.Email = txtEmail.Text;
             developer.Password = txtPassword.Text;
-            developer.RegisterDate = DateTime.Now.Date;
+            developer.RegisterDate = DateTime.Now;
 
             if (int.TryParse(txtCityState.SelectedValue!.ToString(), out var idAddress))
             {
@@ -110,7 +111,8 @@ namespace FinalProject.App.Register
             dataGridViewBaseForm.Columns["CityState"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewBaseForm.Columns["RegisterDate"]!.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewBaseForm.Columns["RegisterDate"].HeaderText = "Register Date";
-            dataGridViewBaseForm.Columns["RegisterDate"].DefaultCellStyle.Format = "MM/dd/yyyy";
+            dataGridViewBaseForm.Columns["RegisterDate"].DefaultCellStyle.Format = "MM/dd/yyyy h:mm:ss tt";
+            dataGridViewBaseForm.Columns["RegisterDate"].DefaultCellStyle.FormatProvider = CultureInfo.InvariantCulture;
         }
 
         protected override void GridToForm(DataGridViewRow? record)
@@ -129,8 +131,8 @@ namespace FinalProject.App.Register
         private void DeveloperForm_Load(object sender, EventArgs e)
         {
             TabControl.SelectedIndex = 0;
-            txtName.Focus();
             LoadCombo();
+            txtCityState.SelectedIndex = -1;
         }
 
          private void txtPassword_TrailingIconClick(object sender, EventArgs e)

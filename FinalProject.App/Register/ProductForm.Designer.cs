@@ -81,7 +81,7 @@
             txtName.HideSelection = true;
             txtName.Hint = "Game";
             txtName.InsertKeyMode = InsertKeyMode.Default;
-            txtName.LeadingIcon = null;
+            txtName.LeadingIcon = Properties.Resources.app_icon;
             txtName.Location = new Point(26, 62);
             txtName.Mask = "";
             txtName.MaxLength = 32767;
@@ -210,7 +210,7 @@
             txtPrice.InsertKeyMode = InsertKeyMode.Default;
             txtPrice.LeadingIcon = null;
             txtPrice.Location = new Point(26, 197);
-            txtPrice.Mask = "000.00";
+            txtPrice.Mask = "";
             txtPrice.MaxLength = 32767;
             txtPrice.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtPrice.Name = "txtPrice";
@@ -230,7 +230,6 @@
             txtPrice.SkipLiterals = true;
             txtPrice.TabIndex = 26;
             txtPrice.TabStop = false;
-            txtPrice.Text = "000,00";
             txtPrice.TextAlign = HorizontalAlignment.Right;
             txtPrice.TextMaskFormat = MaskFormat.IncludePromptAndLiterals;
             txtPrice.TrailingIcon = null;

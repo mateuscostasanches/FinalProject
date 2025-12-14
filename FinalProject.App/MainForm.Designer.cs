@@ -40,7 +40,9 @@
             reportToolStripMenuItem1 = new ToolStripMenuItem();
             helpToolStripMenuItem2 = new ToolStripMenuItem();
             closeToolStripMenuItem2 = new ToolStripMenuItem();
+            pbMainForm = new PictureBox();
             MainMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbMainForm).BeginInit();
             SuspendLayout();
             // 
             // MainMenu
@@ -51,7 +53,7 @@
             MainMenu.Location = new Point(2, 30);
             MainMenu.Name = "MainMenu";
             MainMenu.Padding = new Padding(3, 2, 0, 2);
-            MainMenu.Size = new Size(896, 24);
+            MainMenu.Size = new Size(1276, 24);
             MainMenu.TabIndex = 1;
             MainMenu.Text = "crownMenuStrip1";
             // 
@@ -142,24 +144,34 @@
             closeToolStripMenuItem2.Size = new Size(48, 20);
             closeToolStripMenuItem2.Text = "Close";
             // 
+            // pbMainForm
+            // 
+            pbMainForm.Dock = DockStyle.Fill;
+            pbMainForm.Image = Properties.Resources.Project_Logo_png;
+            pbMainForm.Location = new Point(2, 54);
+            pbMainForm.Name = "pbMainForm";
+            pbMainForm.Size = new Size(1276, 664);
+            pbMainForm.SizeMode = PictureBoxSizeMode.CenterImage;
+            pbMainForm.TabIndex = 2;
+            pbMainForm.TabStop = false;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(45, 45, 48);
-            BackgroundImageLayout = ImageLayout.None;
+            BackgroundImageLayout = ImageLayout.Center;
             BorderColor = Color.Transparent;
             BorderStyle = ButtonBorderStyle.None;
-            ClientSize = new Size(900, 600);
+            ClientSize = new Size(1280, 720);
+            Controls.Add(pbMainForm);
             Controls.Add(MainMenu);
             Font = new Font("Yu Gothic UI", 12F);
             HeaderColor = Color.FromArgb(60, 63, 65);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Image = Properties.Resources.app_icon;
-            ImeMode = ImeMode.NoControl;
-            MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
-            MinimizeBox = false;
+            MinimumSize = new Size(1280, 720);
             Name = "MainForm";
             Padding = new Padding(2, 30, 2, 2);
             Sizable = false;
@@ -169,6 +181,7 @@
             WindowState = FormWindowState.Maximized;
             MainMenu.ResumeLayout(false);
             MainMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbMainForm).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -186,5 +199,6 @@
         private ToolStripMenuItem reportToolStripMenuItem1;
         private ToolStripMenuItem helpToolStripMenuItem2;
         private ToolStripMenuItem closeToolStripMenuItem2;
+        private PictureBox pbMainForm;
     }
 }

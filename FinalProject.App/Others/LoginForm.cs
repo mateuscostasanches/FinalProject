@@ -55,32 +55,6 @@ namespace FinalProject.App.Others
                 _developerService.Add<Developer, Developer, DeveloperValidator>(developer);
             }
         }
-
-        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
-        {
-            if (keyData == Keys.Enter)
-            {
-                try
-                {
-                    if (txtLogin.ContainsFocus)
-                    {
-                        txtPassword.Focus();
-                        return true;
-                    }
-
-                    if (txtPassword.ContainsFocus)
-                    {
-                        btnLogin.PerformClick();
-                        return true;
-                    }
-                }
-                catch
-                {
-                }
-            }
-
-            return base.ProcessCmdKey(ref msg, keyData);
-        }
         #endregion
 
         #region Events

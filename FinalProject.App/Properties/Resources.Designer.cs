@@ -93,6 +93,26 @@ namespace FinalProject.App.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eye {
+            get {
+                object obj = ResourceManager.GetObject("eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hidden {
+            get {
+                object obj = ResourceManager.GetObject("hidden", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap id_icon {
             get {
                 object obj = ResourceManager.GetObject("id icon", resourceCulture);
@@ -136,6 +156,16 @@ namespace FinalProject.App.Properties {
         internal static System.Drawing.Bitmap Project_Logo_png {
             get {
                 object obj = ResourceManager.GetObject("Project.Logo.png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap simbolo_do_dolar {
+            get {
+                object obj = ResourceManager.GetObject("simbolo-do-dolar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
